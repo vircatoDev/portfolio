@@ -1,0 +1,5 @@
+.DS_Store
+# Local AI working notes and context, not published
+.openai/
+SOURCES.md
+README.md
