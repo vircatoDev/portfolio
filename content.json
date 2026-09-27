@@ -227,8 +227,6 @@
           "Анимации и визуальные переходы."
         ],
         "outcome": "Цельный игровой продукт: архитектура, интерфейс и анимации.",
-        "scope_note": "≈500 тыс. — оценка загрузок на конец моего периода в ZiMAD (2018, релиз 2017); точных данных за тот год нет. Текущие накопленные загрузки (проверено 20.09.2026) — 1M+ в Google Play, где приложение теперь называется Royal Solitaire: Card Games. Название в портфолио соответствует периоду ZiMAD.",
-        "media_note": "Оригинальный трейлер ZiMAD, 2017. В нём показаны Klondike, Pyramid и Spider.",
         "frame_labels": [
           "Klondike",
           "Pyramid",
@@ -245,8 +243,6 @@
           "Created animations and visual transitions."
         ],
         "outcome": "A cohesive game spanning architecture, UI, and animation.",
-        "scope_note": "≈500K is an estimate of downloads at the end of my ZiMAD period (2018; released 2017); exact figures for that year are unavailable. The current lifetime Google Play threshold (checked 20 Sep 2026) is 1M+, now listed as Royal Solitaire: Card Games. The portfolio retains its ZiMAD-era name.",
-        "media_note": "Original ZiMAD trailer, 2017. It features Klondike, Pyramid, and Spider.",
         "frame_labels": [
           "Klondike",
           "Pyramid",
@@ -292,8 +288,8 @@
         },
         {
           "url": "https://play.google.com/store/apps/details?id=com.zimad.magicsolitairecollection&hl=en",
-          "ru": "Google Play ↗",
-          "en": "Google Play ↗"
+          "ru": "Google Play (сейчас Royal Solitaire) ↗",
+          "en": "Google Play (now Royal Solitaire) ↗"
         }
       ]
     },
