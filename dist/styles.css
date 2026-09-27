@@ -56,7 +56,7 @@
     #oleg-portfolio .op-node{z-index:3;box-shadow:0 6px 18px color-mix(in srgb,var(--op-accent) 10%,transparent);animation:op-float 6s ease-in-out infinite}
     #oleg-portfolio .op-node.one{top:23px;right:5px;color:var(--op-accent);animation-delay:-1s}
     #oleg-portfolio .op-node.two{bottom:66px;left:0;color:var(--op-secondary);animation-delay:-3s}
-    #oleg-portfolio .op-node.three{bottom:47px;right:8px;color:var(--op-pop);animation-delay:-4.5s}
+    #oleg-portfolio .op-node.three{bottom:47px;right:8px;color:var(--op-pop);animation-delay:-4.5s}#oleg-portfolio .op-node.four{top:52px;left:10px;color:var(--op-pop);animation-delay:-2s}#oleg-portfolio .op-node.five{top:128px;right:0;color:var(--op-secondary);animation-delay:-.5s}#oleg-portfolio .op-node.six{top:132px;left:0;color:var(--op-accent);animation-delay:-5s}#oleg-portfolio .op-node.seven{bottom:0;left:50%;transform:translateX(-50%);color:var(--op-secondary);animation-delay:-2.5s}
     #oleg-portfolio .op-art-label{font-size:10px;bottom:0}
     #oleg-portfolio .op-play-hint{position:absolute;top:0;left:0;font:10px/1.4 ui-monospace,monospace;color:var(--op-muted);letter-spacing:1px}
     #oleg-portfolio .op-spark{position:absolute;top:50%;left:50%;width:7px;height:7px;z-index:4;background:var(--op-secondary);border-radius:2px;pointer-events:none;animation:op-spark .85s cubic-bezier(.16,.72,.3,1) forwards}
