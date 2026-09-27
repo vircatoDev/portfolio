@@ -67,8 +67,6 @@
           "Анимации, Spine, VFX, локализация и оптимизация."
         ],
         "outcome": "Образовательная песочница с системами взаимодействия, персонализации и ежедневного обучения.",
-        "scope_note": "Число систем и мини-игр — данные из моего резюме; это мой вклад в разработку.",
-        "media_note": "Кадры игрового процесса предоставлены автором портфолио.",
         "frame_labels": [
           "Космическая гостиная и эмоции персонажа",
           "Взаимодействия с предметами и окружением"
@@ -86,8 +84,6 @@
           "Animation, Spine, VFX, localization, and optimization."
         ],
         "outcome": "An educational sandbox with interaction, personalization, and daily learning systems.",
-        "scope_note": "System and mini-game counts describe my contribution, as recorded in my CV.",
-        "media_note": "Gameplay frames supplied by the portfolio author.",
         "frame_labels": [
           "Space lounge and character expressions",
           "Object and environment interactions"
