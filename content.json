@@ -213,20 +213,27 @@
       "tags": [
         "Unity",
         "C#",
-        "Architecture",
+        "OOP",
+        "MVC",
+        "Command",
+        "Strategy",
+        "State machine",
         "UI",
         "Animation"
       ],
       "ru": {
         "headline": "Разработка с чистого листа",
-        "description": "Коллекция классических пасьянсов с разными игровыми режимами, оформлением карт и системой прогресса.",
-        "contribution": "Разрабатывал игру с нуля: спроектировал архитектуру, реализовал пользовательский интерфейс и анимации. Отвечал за техническую реализацию основных частей проекта.",
+        "description": "Коллекция классических пасьянсов — Klondike, Spider и Pyramid — с оформлением карт, статистикой и уровнями игрока.",
+        "contribution": "Разрабатывал игру с нуля: спроектировал ООП-архитектуру, в которой Klondike, Spider и Pyramid работают на общем ядре, а правила каждого пасьянса вынесены в отдельный класс. Интерфейс построил по MVC, реализовал анимации карт и экранов.",
         "details": [
-          "Архитектура проекта с нуля.",
-          "Реализация пользовательского интерфейса.",
-          "Анимации и визуальные переходы."
+          "Ядро на чистом C#: карты, колода, стопки и состояние партии не зависят от сцены Unity, а сцена только отображает модель.",
+          "Варианты пасьянса — общий базовый класс правил (Template Method + Strategy): раздача, допустимые ходы, условие победы и подсчёт очков переопределяются для Klondike, Spider и Pyramid. Новый пасьянс — новый класс правил без правок ядра.",
+          "Ходы оформлены как команды (Command): история команд даёт отмену хода, а подсказки перебирают возможные ходы-команды.",
+          "Интерфейс по MVC: модели партии, настроек и прогресса, представления на Unity UI и контроллеры ввода. Представления подписаны на события модели (Observer), зависимости передаются через интерфейсы.",
+          "Поток игры — конечный автомат: меню, выбор пасьянса, раздача, партия, победа.",
+          "Анимации раздачи, переноса и переворота карт, переходы между экранами."
         ],
-        "outcome": "Цельный игровой продукт: архитектура, интерфейс и анимации.",
+        "outcome": "Цельный продукт на расширяемой архитектуре: новый пасьянс добавляется классом правил, а не переписыванием ядра.",
         "frame_labels": [
           "Klondike",
           "Pyramid",
@@ -235,14 +242,17 @@
       },
       "en": {
         "headline": "Built from the ground up",
-        "description": "A collection of classic solitaire games with multiple game modes, customizable card designs, and progression.",
-        "contribution": "Developed the game from scratch, designing its architecture and implementing the user interface and animations. Owned the technical implementation of the project's core parts.",
+        "description": "A collection of classic solitaire games — Klondike, Spider, and Pyramid — with card designs, statistics, and player levels.",
+        "contribution": "Built the game from scratch: designed an OOP architecture in which Klondike, Spider, and Pyramid run on a shared core, with each game’s rules in its own class. Built the UI on MVC and implemented card and screen animations.",
         "details": [
-          "Designed the project architecture from scratch.",
-          "Implemented the user interface.",
-          "Created animations and visual transitions."
+          "A plain C# core: cards, deck, piles, and game state don’t depend on the Unity scene; the scene only renders the model.",
+          "Solitaire variants share a base rules class (Template Method + Strategy): dealing, legal moves, win condition, and scoring are overridden for Klondike, Spider, and Pyramid. A new game is a new rules class, with no changes to the core.",
+          "Moves are commands (Command pattern): the command history powers undo, and hints search through possible move commands.",
+          "MVC UI: models for the game, settings, and progress, Unity UI views, and input controllers. Views subscribe to model events (Observer); dependencies are passed through interfaces.",
+          "Game flow is a state machine: menu, game selection, dealing, play, victory.",
+          "Animations for dealing, moving, and flipping cards, plus screen transitions."
         ],
-        "outcome": "A cohesive game spanning architecture, UI, and animation.",
+        "outcome": "A cohesive product on an extensible architecture: adding a solitaire means adding a rules class, not rewriting the core.",
         "frame_labels": [
           "Klondike",
           "Pyramid",
