@@ -414,7 +414,8 @@
         "ECS",
         "UniRx",
         ".NET",
-        "Sockets"
+        "TCP sockets",
+        "Azure"
       ],
       "frames": [
         {
@@ -485,12 +486,12 @@
       "ru": {
         "headline": "Цифровой опыт в реальном пространстве",
         "description": "В Zengalt работал над AR/MR-проектами на Unity для HoloLens, iOS и Android: публичной арт-инсталляцией Unmoored, музейной выставкой Defying Gravity, приложениями для Renault F1 Team и платформой Vyzn.",
-        "contribution": "В Zengalt, партнёре Microsoft по смешанной реальности, разрабатывал на Unity приложения для HoloLens и переносил их на смартфоны и планшеты: iOS (ARKit) и Android (ARCore). В Vyzn работал с ECS-архитектурой, UniRx и сервером на .NET, с которым клиенты обменивались данными через сокеты.",
+        "contribution": "В Zengalt, партнёре Microsoft по смешанной реальности, разрабатывал на Unity приложения для HoloLens и переносил их на смартфоны и планшеты: iOS (ARKit) и Android (ARCore). В Vyzn работал с ECS и UniRx на клиенте и с серверной частью на .NET: TCP-сокеты и база данных в Azure.",
         "details": [
           "Unmoored (2018) — работа художника Мела Чина на Таймс-сквер: больше сотни судов над площадью показывали возможное затопленное будущее Нью-Йорка. Опыт работал в HoloLens и в AR на смартфонах и планшетах. Разработчик приложения — Zengalt; продюсеры — Microsoft и Listen.",
           "Defying Gravity: Women in Space (2018) — выставка в нью-йоркском музее Intrepid, открытая в Museum Day журнала Smithsonian вместе с Microsoft. В HoloLens посетителей вела под шаттлом Enterprise голограмма астронавта Мэй Джемисон и рассказывала о женщинах космической программы США — от Кэтрин Джонсон до «Меркурия-13». Приложение для HoloLens — Zengalt; голограмму Microsoft сняла в своей Mixed Reality Capture Studio на 106 камер.",
           "Renault F1 Team и Microsoft (2018–2019) — на мероприятиях перед гонками сезона 2018 Microsoft показывала VIP-гостям, прессе и фанатам MR-историю о болиде R.S.18 из пяти глав: эволюция машины, безопасность, цифры и факты. В 2019 году вышло приложение Where tech meets track для HoloLens и iPad: болид R.S.19 в AR, настройка антикрыла, шин и подвески, выбор трассы и симуляция гонки в роли инженера Renault F1 Team с таблицей лидеров.",
-          "Vyzn — платформа Zengalt для совместных MR-презентаций на HoloLens без программирования: дизайнер загружает FBX-модели и показывает сцену сразу нескольким зрителям в гарнитурах. Клиент на Unity строился на ECS, реактивные сценарии и связность данных — на UniRx; серверная часть — на .NET, клиенты обменивались с ней данными через сокеты."
+          "Vyzn — платформа Zengalt для совместных MR-презентаций на HoloLens без программирования: дизайнер загружает FBX-модели и показывает сцену сразу нескольким зрителям в гарнитурах. Клиент на Unity строился на ECS, реактивные сценарии и связность данных — на UniRx. Серверная часть — консольное .NET-приложение на выделенном сервере: клиенты обменивались с ним данными по TCP-сокетам, а оно загружало данные с сайта в базу данных в Azure."
         ],
         "outcome": "Приложения смешанной и дополненной реальности для городской площади, музея и Формулы-1 — на HoloLens, iOS и Android.",
         "frame_labels": [
@@ -504,12 +505,12 @@
       "en": {
         "headline": "Digital experiences in real spaces",
         "description": "At Zengalt, worked on Unity AR/MR projects for HoloLens, iOS, and Android: Unmoored, a public art installation; Defying Gravity, a museum exhibition; apps for Renault F1 Team; and the Vyzn platform.",
-        "contribution": "At Zengalt, a Microsoft mixed reality partner, I built Unity apps for HoloLens and ported them to phones and tablets: iOS (ARKit) and Android (ARCore). On Vyzn I worked with an ECS architecture, UniRx, and a .NET server that clients talked to over sockets.",
+        "contribution": "At Zengalt, a Microsoft mixed reality partner, I built Unity apps for HoloLens and ported them to phones and tablets: iOS (ARKit) and Android (ARCore). On Vyzn I worked with ECS and UniRx on the client and with the .NET back end: TCP sockets and a database in Azure.",
         "details": [
           "Unmoored (2018) — Mel Chin’s Times Square artwork: more than a hundred boats above the square depicted a possible flooded future of New York. It ran on HoloLens and as AR on phones and tablets. App development by Zengalt; produced by Microsoft and Listen.",
           "Defying Gravity: Women in Space (2018) — an exhibition at New York’s Intrepid Museum, launched on Smithsonian magazine’s Museum Day with Microsoft. In HoloLens, a hologram of astronaut Dr. Mae Jemison led visitors beneath Space Shuttle Enterprise and told the stories of women in the US space program, from Katherine Johnson to the Mercury 13. HoloLens app by Zengalt; Microsoft captured the hologram with 106 cameras at its Mixed Reality Capture Studio.",
           "Renault F1 Team and Microsoft (2018–2019) — at pre-race events of the 2018 season, Microsoft showed VIP guests, media, and fans a five-chapter mixed reality story about the R.S.18: the car’s evolution, safety, facts and figures. In 2019 came Where tech meets track for HoloLens and iPad: the R.S.19 in AR, tuning the rear wing, tires, and suspension, picking a track, and running a race simulation as a Renault F1 Team engineer, with a leaderboard.",
-          "Vyzn — Zengalt’s platform for shared mixed reality presentations on HoloLens without writing code: designers upload FBX models and present a scene to several people in headsets at once. The Unity client was built on ECS, with reactive flow and data binding on UniRx; the server side ran on .NET, and clients talked to it over sockets."
+          "Vyzn — Zengalt’s platform for shared mixed reality presentations on HoloLens without writing code: designers upload FBX models and present a scene to several people in headsets at once. The Unity client was built on ECS, with reactive flow and data binding on UniRx. The back end was a .NET console app on a dedicated server: clients exchanged data with it over TCP sockets, and it loaded data from the website into a database in Azure."
         ],
         "outcome": "Mixed and augmented reality apps for a city square, a museum, and Formula One, on HoloLens, iOS, and Android.",
         "frame_labels": [
