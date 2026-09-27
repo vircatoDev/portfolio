@@ -1,6 +1,6 @@
 {
   "checked_at": "2026-09-20",
-  "metrics_scope": "Per-card figures marked ≈ are approximate estimates for the period of Oleg's employment at each company; exact per-year download data is not publicly available. Current lifetime Google Play thresholds were verified on 2026-09-20 and are kept in each project's scope_note. Figures are not unique users and not Windows or iOS totals unless stated.",
+  "metrics_scope": "Per-card figures marked ≈ are approximate estimates for the period of Oleg's employment at each company; exact per-year download data is not publicly available. Store ratings and download thresholds were checked on 2026-09-20. Figures are not unique users and not Windows or iOS totals unless stated.",
   "projects": [
     {
       "slug": "al-galaxy",
@@ -124,8 +124,6 @@
           "Адаптация проекта под целевую Windows-платформу и формат Windows Store."
         ],
         "outcome": "Windows-версия мобильного проекта.",
-        "scope_note": "≈5 млн — оценка загрузок Android-игры на конец моего периода в ZiMAD (2018); точных данных за тот год нет. Текущие накопленные показатели (проверено 20.09.2026) — 10M+, 4.2★, 117K отзывов. Это масштаб игры, а не метрика Windows-порта.",
-        "media_note": "Кадры из ролика ZiMAD 2019 года иллюстрируют игру; это не запись Windows-сборки.",
         "frame_labels": [
           "Сокровища и персонажи",
           "Ловушки и противники",
@@ -141,8 +139,6 @@
           "Adapted the project for the Windows target platform and Windows Store distribution."
         ],
         "outcome": "A Windows version of the mobile project.",
-        "scope_note": "≈5M is an estimate of Android downloads at the end of my ZiMAD period (2018); exact figures for that year are unavailable. Current lifetime figures (checked 20 Sep 2026) are 10M+, 4.2★, 117K reviews. This is the scale of the game, not a metric of the Windows port.",
-        "media_note": "Frames from ZiMAD's 2019 video illustrate the game; they do not show the Windows build.",
         "frame_labels": [
           "Treasure and characters",
           "Traps and enemies",
@@ -335,8 +331,6 @@
           "Дальнейшее развитие игры."
         ],
         "outcome": "Коммерческий релиз и дальнейшее развитие мобильной игры.",
-        "scope_note": "10 млн+ загрузок (Google Play и App Store) — результат, который моё резюме связывает с релизом и развитием игры в период HeroCraft (2019–2021). Накопленные загрузки продолжают расти и после моей работы; сейчас в Google Play указан Hypnocat Studio. В портфолио отражён период HeroCraft.",
-        "media_note": "Кадры из официального трейлера HeroCraft, 2017. Иллюстрируют продукт, а не датируют мой вклад.",
         "frame_labels": [
           "Выстрелы и спасение персонажей",
           "Уровень с препятствиями",
@@ -353,8 +347,6 @@
           "Continued developing the game."
         ],
         "outcome": "A commercial release followed by continued game development.",
-        "scope_note": "10M+ downloads (Google Play and App Store) is the result my CV ties to the game's release and growth during my HeroCraft period (2019–2021). Lifetime downloads kept growing after my involvement; Google Play now lists Hypnocat Studio. This portfolio represents my HeroCraft work.",
-        "media_note": "Frames from HeroCraft's official 2017 trailer illustrate the product, not the dates of my contribution.",
         "frame_labels": [
           "Archery and character rescue",
           "An obstacle-based level",
