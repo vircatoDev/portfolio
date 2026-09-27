@@ -332,9 +332,9 @@
         ],
         "outcome": "Коммерческий релиз и дальнейшее развитие мобильной игры.",
         "frame_labels": [
-          "Выстрелы и спасение персонажей",
-          "Уровень с препятствиями",
-          "Кастомизация персонажей"
+          "Комбо: одна стрела спасает нескольких персонажей; таблица лидеров",
+          "Уровень с кольцами, меняющими направление стрелы",
+          "Уровни с препятствиями в портретном режиме"
         ]
       },
       "en": {
@@ -348,23 +348,23 @@
         ],
         "outcome": "A commercial release followed by continued game development.",
         "frame_labels": [
-          "Archery and character rescue",
-          "An obstacle-based level",
-          "Character customization"
+          "Combo: one arrow saves several characters; the leaderboard",
+          "A level with rings that redirect the arrow",
+          "Portrait-mode levels with obstacles"
         ]
       },
       "frames": [
         {
-          "image": "assets/gibbets-bow-master-01.jpg",
-          "time_label": "00:29.0"
+          "image": "assets/gibbets-bow-master-promo-01.jpg",
+          "time_label": ""
         },
         {
-          "image": "assets/gibbets-bow-master-02.jpg",
-          "time_label": "00:31.0"
+          "image": "assets/gibbets-bow-master-promo-02.jpg",
+          "time_label": ""
         },
         {
-          "image": "assets/gibbets-bow-master-03.jpg",
-          "time_label": "00:45.0"
+          "image": "assets/gibbets-bow-master-promo-03.jpg",
+          "time_label": ""
         }
       ],
       "stats": [
