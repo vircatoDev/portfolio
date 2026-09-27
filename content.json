@@ -462,8 +462,6 @@
           "Vyzn — платформа Zengalt для создания mixed reality-сцен и презентаций на HoloLens без программирования. Применялась для визуализации 3D-проектов в реальном пространстве. Архитектура строилась на ECS, а реактивные сценарии и связность данных — на UniRx."
         ],
         "outcome": "Работа над публичным AR-проектом и инструментом создания MR-контента.",
-        "scope_note": "Описание проектов подтверждено страницей художника и кейсом Microsoft.",
-        "media_note": "На изображении — Unmoored (2018), Mel Chin. Источник: Mel Chin Studio. Изображение не представляет интерфейс Vyzn.",
         "frame_labels": [
           "Unmoored — Times Square / Mel Chin Studio"
         ]
@@ -477,8 +475,6 @@
           "Vyzn — Zengalt’s platform for creating mixed reality scenes and presentations on HoloLens without writing code, bringing 3D designs into real-world spaces. Its architecture was built on ECS, with reactive flow and data binding on UniRx."
         ],
         "outcome": "Experience with a public AR project and a mixed reality content creation tool.",
-        "scope_note": "Project descriptions are supported by the artist’s website and Microsoft’s case study.",
-        "media_note": "Image: Unmoored (2018), Mel Chin. Source: Mel Chin Studio. This is not a screenshot of Vyzn.",
         "frame_labels": [
           "Unmoored — Times Square / Mel Chin Studio"
         ]
