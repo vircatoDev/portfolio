@@ -18,6 +18,10 @@
       ],
       "frames": [
         {
+          "image": "assets/al-galaxy-gameplay.jpg",
+          "video": "assets/al-galaxy-gameplay.mp4"
+        },
+        {
           "image": "assets/al-galaxy-01.png"
         },
         {
@@ -66,6 +70,7 @@
         ],
         "outcome": "Образовательная песочница с системами взаимодействия, персонализации и ежедневного обучения.",
         "frame_labels": [
+          "Геймплей: комнаты песочницы, персонажи и мини-игра с буквами",
           "Космическая гостиная и эмоции персонажа",
           "Взаимодействия с предметами и окружением"
         ]
@@ -83,6 +88,7 @@
         ],
         "outcome": "An educational sandbox with interaction, personalization, and daily learning systems.",
         "frame_labels": [
+          "Gameplay: sandbox rooms, characters, and a letter mini-game",
           "Space lounge and character expressions",
           "Object and environment interactions"
         ]

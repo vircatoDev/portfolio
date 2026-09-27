@@ -11,15 +11,17 @@
     const projectData=JSON.parse(document.getElementById('op-project-data').textContent).projects;
     const grid=root.querySelector('.op-projects');grid.replaceChildren();
     const cardViews=[];
+    const clipObserver='IntersectionObserver' in window?new IntersectionObserver(entries=>entries.forEach(entry=>{const view=cardViews.find(v=>v.clip===entry.target);if(view){view.clipVisible=entry.isIntersecting;playClip(view);}})):null;
     function make(tag,cls,text){const el=document.createElement(tag);if(cls)el.className=cls;if(text!==undefined)el.textContent=text;return el;}
     projectData.forEach(project=>{
       const article=make('article','op-project op-real-project');article.dataset.project=project.slug;if(project.featured)article.classList.add('op-featured');
       const figure=make('figure','op-gallery');const shot=make('img','op-shot');shot.width=1920;shot.height=1080;shot.decoding='async';shot.loading=project.featured?'eager':'lazy';
+      const clip=make('video','op-shot');clip.muted=true;clip.loop=true;clip.playsInline=true;clip.preload='none';clip.hidden=true;clip.setAttribute('muted','');clip.setAttribute('playsinline','');
       const caption=make('figcaption','op-shot-caption');caption.setAttribute('aria-live','polite');
       const bar=make('div','op-gallery-bar');const controls=make('div','op-shot-controls');
-      const view={project,article,shot,caption,index:0,buttons:[]};
+      const view={project,article,shot,clip,caption,index:0,buttons:[]};
       project.frames.forEach((frame,index)=>{const button=make('button','op-shot-select cursor-interaction',String(index+1).padStart(2,'0'));button.type='button';button.addEventListener('click',()=>{view.index=index;renderGallery(view);});controls.append(button);view.buttons.push(button);});
-      controls.hidden=project.frames.length<2;bar.append(controls);figure.append(shot,bar,caption);
+      controls.hidden=project.frames.length<2;bar.append(controls);figure.append(shot,clip,bar,caption);if(project.frames.some(frame=>frame.video))clipObserver?.observe(clip);
       const body=make('div','op-project-copy');const companyLine=project.period?project.company+' · '+project.period+' / '+project.role:project.company+' / '+project.role;body.append(make('div','op-project-company',companyLine),make('h3','',project.title));
       view.headline=make('p','op-project-headline');view.contribution=make('p','op-contribution');
       const tags=make('div','op-tags');project.tags.forEach(tag=>tags.append(make('span','',tag)));
@@ -31,7 +33,8 @@
     });
     root.querySelector('.op-index').textContent='01 — 05 / SELECTED WORK';
     const metricNote=make('p','op-metric-note');root.querySelector('.op-work').append(metricNote);
-    function renderGallery(view){const text=view.project[state.lang];const frame=view.project.frames[view.index];view.shot.src=frame.image;view.shot.alt=view.project.title+' — '+text.frame_labels[view.index];view.caption.textContent=text.frame_labels[view.index];view.buttons.forEach((button,index)=>{button.setAttribute('aria-pressed',String(index===view.index));button.setAttribute('aria-label',text.frame_labels[index]);});}
+    function renderGallery(view){const text=view.project[state.lang];const frame=view.project.frames[view.index];const label=view.project.title+' — '+text.frame_labels[view.index];view.shot.hidden=Boolean(frame.video);view.clip.hidden=!frame.video;if(frame.video){view.clip.poster=frame.image;if(view.clip.getAttribute('src')!==frame.video)view.clip.src=frame.video;view.clip.setAttribute('aria-label',label);}else{view.shot.src=frame.image;view.shot.alt=label;}playClip(view);view.caption.textContent=text.frame_labels[view.index];view.buttons.forEach((button,index)=>{button.setAttribute('aria-pressed',String(index===view.index));button.setAttribute('aria-label',text.frame_labels[index]);});}
+    function playClip(view){const clip=view.clip,live=state.motion&&!reducedMotion.matches;clip.controls=!live;if(clip.hidden||!live||view.clipVisible===false){clip.pause();return;}clip.play().catch(()=>{clip.controls=true;});}
     function renderProjects(){cardViews.forEach(view=>{const text=view.project[state.lang];view.headline.textContent=text.headline;view.contribution.textContent=text.contribution;view.description.textContent=text.description;view.summary.textContent=state.lang==='ru'?'О проекте и моём вкладе':'Project & my contribution';view.list.replaceChildren(...text.details.map(item=>make('li','',item)));view.outcome.textContent=(state.lang==='ru'?'Результат: ':'Outcome: ')+text.outcome;view.scope.textContent=text.scope_note;view.scope.hidden=!text.scope_note;view.media.textContent=text.media_note;view.media.hidden=!text.media_note;view.statLabels.forEach((el,i)=>el.textContent=view.project.stats[i][state.lang]);view.links.forEach((a,i)=>a.textContent=view.project.links[i][state.lang]);renderGallery(view);});metricNote.textContent=state.lang==='ru'?'Показатели со знаком ≈ — приблизительные оценки на период моей работы.':'Figures marked ≈ are approximate estimates for the period of my work.';}
     const art=root.querySelector('.op-art');art.removeAttribute('role');
     const core=document.createElement('button');core.type='button';core.className='op-core cursor-interaction';

@@ -7,8 +7,10 @@ root = Path(__file__).resolve().parent
 content = json.loads((root / 'content.json').read_text())
 for project in content['projects']:
     for frame in project['frames']:
-        if not (root / 'dist' / frame['image']).is_file():
-            raise FileNotFoundError(frame['image'])
+        # A video frame keeps its poster in "image"
+        for path in (frame['image'], frame.get('video')):
+            if path and not (root / 'dist' / path).is_file():
+                raise FileNotFoundError(path)
 page = root / 'dist/index.html'
 payload = json.dumps(content, ensure_ascii=False).replace('<', r'\u003c')
 pattern = r'(<script type="application/json" id="op-project-data">).*?(</script>)'
