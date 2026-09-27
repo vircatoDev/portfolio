@@ -401,39 +401,58 @@
     },
     {
       "slug": "zengalt",
-      "title": "Unmoored & Vyzn",
+      "title": "Unmoored, Defying Gravity, Renault F1 & Vyzn",
       "company": "Zengalt",
       "role": "Unity / XR Developer",
       "period": "2018–2019",
       "tags": [
         "Unity",
         "C#",
+        "HoloLens",
+        "ARKit",
+        "ARCore",
         "ECS",
         "UniRx",
-        "HoloLens",
-        "AR / MR"
+        ".NET",
+        "Sockets"
       ],
       "frames": [
         {
           "image": "assets/unmoored.png",
-          "time_label": "Unmoored · 2018"
+          "time_label": "2018"
+        },
+        {
+          "image": "assets/defying-gravity-01.jpg",
+          "time_label": "2018"
+        },
+        {
+          "image": "assets/defying-gravity-02.jpg",
+          "time_label": "2018"
+        },
+        {
+          "image": "assets/renault-f1-01.jpg",
+          "time_label": "2019"
+        },
+        {
+          "image": "assets/renault-f1-02.jpg",
+          "time_label": "2019"
         }
       ],
       "stats": [
         {
-          "value": "2",
-          "ru": "XR-проекта",
-          "en": "XR projects"
+          "value": "4",
+          "ru": "MR/AR-проекта",
+          "en": "MR/AR projects"
         },
         {
-          "value": "AR / MR",
-          "ru": "направление",
-          "en": "focus"
+          "value": "3",
+          "ru": "платформы: HoloLens, iOS, Android",
+          "en": "platforms: HoloLens, iOS, Android"
         },
         {
-          "value": "HoloLens",
-          "ru": "платформа",
-          "en": "platform"
+          "value": "Microsoft",
+          "ru": "партнёр проектов",
+          "en": "project partner"
         }
       ],
       "links": [
@@ -443,40 +462,62 @@
           "en": "Unmoored ↗"
         },
         {
-          "url": "https://partner.microsoft.com/zh-cn/case-studies/zengalt",
-          "ru": "Vyzn — Microsoft ↗",
-          "en": "Vyzn — Microsoft ↗"
+          "url": "https://intrepidmuseum.org/exhibitions/past-exhibitions/defying-gravity-women-in-space",
+          "ru": "Defying Gravity — Intrepid ↗",
+          "en": "Defying Gravity — Intrepid ↗"
         },
         {
-          "url": "https://news.artnet.com/art-world/mel-chin-confronts-climate-change-times-square-virtual-reality-artwork-1317413",
-          "ru": "Artnet ↗",
-          "en": "Artnet ↗"
+          "url": "https://www.wired.com/story/museums-augmented-reality-next-frontier/",
+          "ru": "Wired ↗",
+          "en": "Wired ↗"
+        },
+        {
+          "url": "https://apps.microsoft.com/detail/9nvffl6qtv0l",
+          "ru": "Renault F1 — Microsoft Store ↗",
+          "en": "Renault F1 — Microsoft Store ↗"
+        },
+        {
+          "url": "https://partner.microsoft.com/en-us/case-studies/zengalt",
+          "ru": "Vyzn — Microsoft ↗",
+          "en": "Vyzn — Microsoft ↗"
         }
       ],
       "ru": {
         "headline": "Цифровой опыт в реальном пространстве",
-        "description": "В Zengalt работал над AR/MR-проектами на Unity: публичной арт-инсталляцией Unmoored и приложением Vyzn для HoloLens.",
-        "contribution": "Участвовал в разработке Unmoored и Vyzn в команде Zengalt. Писал интерактивные приложения на Unity для дополненной и смешанной реальности; в Vyzn использовал ECS-архитектуру и реактивный подход на UniRx.",
+        "description": "В Zengalt работал над AR/MR-проектами на Unity для HoloLens, iOS и Android: публичной арт-инсталляцией Unmoored, музейной выставкой Defying Gravity, приложениями для Renault F1 Team и платформой Vyzn.",
+        "contribution": "В Zengalt, партнёре Microsoft по смешанной реальности, разрабатывал на Unity приложения для HoloLens и переносил их на смартфоны и планшеты: iOS (ARKit) и Android (ARCore). В Vyzn работал с ECS-архитектурой, UniRx и сервером на .NET, с которым клиенты обменивались данными через сокеты.",
         "details": [
-          "Unmoored — работа художника Мела Чина на Таймс-сквер: суда над площадью показывали возможное затопленное будущее Нью-Йорка. Разработчик приложения — Zengalt; продюсеры — Microsoft и Listen.",
-          "Vyzn — платформа Zengalt для создания mixed reality-сцен и презентаций на HoloLens без программирования. Применялась для визуализации 3D-проектов в реальном пространстве. Архитектура строилась на ECS, а реактивные сценарии и связность данных — на UniRx."
+          "Unmoored (2018) — работа художника Мела Чина на Таймс-сквер: больше сотни судов над площадью показывали возможное затопленное будущее Нью-Йорка. Опыт работал в HoloLens и в AR на смартфонах и планшетах. Разработчик приложения — Zengalt; продюсеры — Microsoft и Listen.",
+          "Defying Gravity: Women in Space (2018) — выставка в нью-йоркском музее Intrepid, открытая в Museum Day журнала Smithsonian вместе с Microsoft. В HoloLens посетителей вела под шаттлом Enterprise голограмма астронавта Мэй Джемисон и рассказывала о женщинах космической программы США — от Кэтрин Джонсон до «Меркурия-13». Приложение для HoloLens — Zengalt; голограмму Microsoft сняла в своей Mixed Reality Capture Studio на 106 камер.",
+          "Renault F1 Team и Microsoft (2018–2019) — на мероприятиях перед гонками сезона 2018 Microsoft показывала VIP-гостям, прессе и фанатам MR-историю о болиде R.S.18 из пяти глав: эволюция машины, безопасность, цифры и факты. В 2019 году вышло приложение Where tech meets track для HoloLens и iPad: болид R.S.19 в AR, настройка антикрыла, шин и подвески, выбор трассы и симуляция гонки в роли инженера Renault F1 Team с таблицей лидеров.",
+          "Vyzn — платформа Zengalt для совместных MR-презентаций на HoloLens без программирования: дизайнер загружает FBX-модели и показывает сцену сразу нескольким зрителям в гарнитурах. Клиент на Unity строился на ECS, реактивные сценарии и связность данных — на UniRx; серверная часть — на .NET, клиенты обменивались с ней данными через сокеты."
         ],
-        "outcome": "Работа над публичным AR-проектом и инструментом создания MR-контента.",
+        "outcome": "Приложения смешанной и дополненной реальности для городской площади, музея и Формулы-1 — на HoloLens, iOS и Android.",
         "frame_labels": [
-          "Unmoored — Times Square / Mel Chin Studio"
+          "Unmoored — Таймс-сквер / Mel Chin Studio",
+          "Defying Gravity — голограмма Мэй Джемисон в HoloLens / Microsoft",
+          "Defying Gravity — рассказ о Кэтрин Джонсон под шаттлом Enterprise / Microsoft",
+          "Where tech meets track — аэродинамика R.S.19 в AR на iPad",
+          "Where tech meets track — настройка болида перед гонкой"
         ]
       },
       "en": {
         "headline": "Digital experiences in real spaces",
-        "description": "At Zengalt, worked on Unity AR/MR projects: Unmoored, a public art installation, and Vyzn for HoloLens.",
-        "contribution": "Contributed to Unmoored and Vyzn as part of Zengalt’s development team, building interactive Unity applications for augmented and mixed reality; on Vyzn I worked with an ECS architecture and a reactive UniRx approach.",
+        "description": "At Zengalt, worked on Unity AR/MR projects for HoloLens, iOS, and Android: Unmoored, a public art installation; Defying Gravity, a museum exhibition; apps for Renault F1 Team; and the Vyzn platform.",
+        "contribution": "At Zengalt, a Microsoft mixed reality partner, I built Unity apps for HoloLens and ported them to phones and tablets: iOS (ARKit) and Android (ARCore). On Vyzn I worked with an ECS architecture, UniRx, and a .NET server that clients talked to over sockets.",
         "details": [
-          "Unmoored — Mel Chin’s Times Square artwork used boats above the square to depict a possible flooded future of New York. App development by Zengalt; produced by Microsoft and Listen.",
-          "Vyzn — Zengalt’s platform for creating mixed reality scenes and presentations on HoloLens without writing code, bringing 3D designs into real-world spaces. Its architecture was built on ECS, with reactive flow and data binding on UniRx."
+          "Unmoored (2018) — Mel Chin’s Times Square artwork: more than a hundred boats above the square depicted a possible flooded future of New York. It ran on HoloLens and as AR on phones and tablets. App development by Zengalt; produced by Microsoft and Listen.",
+          "Defying Gravity: Women in Space (2018) — an exhibition at New York’s Intrepid Museum, launched on Smithsonian magazine’s Museum Day with Microsoft. In HoloLens, a hologram of astronaut Dr. Mae Jemison led visitors beneath Space Shuttle Enterprise and told the stories of women in the US space program, from Katherine Johnson to the Mercury 13. HoloLens app by Zengalt; Microsoft captured the hologram with 106 cameras at its Mixed Reality Capture Studio.",
+          "Renault F1 Team and Microsoft (2018–2019) — at pre-race events of the 2018 season, Microsoft showed VIP guests, media, and fans a five-chapter mixed reality story about the R.S.18: the car’s evolution, safety, facts and figures. In 2019 came Where tech meets track for HoloLens and iPad: the R.S.19 in AR, tuning the rear wing, tires, and suspension, picking a track, and running a race simulation as a Renault F1 Team engineer, with a leaderboard.",
+          "Vyzn — Zengalt’s platform for shared mixed reality presentations on HoloLens without writing code: designers upload FBX models and present a scene to several people in headsets at once. The Unity client was built on ECS, with reactive flow and data binding on UniRx; the server side ran on .NET, and clients talked to it over sockets."
         ],
-        "outcome": "Experience with a public AR project and a mixed reality content creation tool.",
+        "outcome": "Mixed and augmented reality apps for a city square, a museum, and Formula One, on HoloLens, iOS, and Android.",
         "frame_labels": [
-          "Unmoored — Times Square / Mel Chin Studio"
+          "Unmoored — Times Square / Mel Chin Studio",
+          "Defying Gravity — Mae Jemison’s hologram in HoloLens / Microsoft",
+          "Defying Gravity — Katherine Johnson’s story beneath Space Shuttle Enterprise / Microsoft",
+          "Where tech meets track — R.S.19 aerodynamics in AR on iPad",
+          "Where tech meets track — setting up the car before a race"
         ]
       }
     }
