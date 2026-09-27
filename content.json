@@ -18,12 +18,10 @@
       ],
       "frames": [
         {
-          "image": "assets/al-galaxy-01.png",
-          "time_label": ""
+          "image": "assets/al-galaxy-01.png"
         },
         {
-          "image": "assets/al-galaxy-02.png",
-          "time_label": ""
+          "image": "assets/al-galaxy-02.png"
         }
       ],
       "stats": [
@@ -143,16 +141,13 @@
       },
       "frames": [
         {
-          "image": "assets/dig-out-01.jpg",
-          "time_label": "00:00.9"
+          "image": "assets/dig-out-01.jpg"
         },
         {
-          "image": "assets/dig-out-02.jpg",
-          "time_label": "00:10.9"
+          "image": "assets/dig-out-02.jpg"
         },
         {
-          "image": "assets/dig-out-03.jpg",
-          "time_label": "00:19.8"
+          "image": "assets/dig-out-03.jpg"
         }
       ],
       "stats": [
@@ -253,16 +248,13 @@
       },
       "frames": [
         {
-          "image": "assets/magic-solitaire-01.jpg",
-          "time_label": "00:07.2"
+          "image": "assets/magic-solitaire-01.jpg"
         },
         {
-          "image": "assets/magic-solitaire-02.jpg",
-          "time_label": "00:10.1"
+          "image": "assets/magic-solitaire-02.jpg"
         },
         {
-          "image": "assets/magic-solitaire-03.jpg",
-          "time_label": "00:25.0"
+          "image": "assets/magic-solitaire-03.jpg"
         }
       ],
       "stats": [
@@ -351,16 +343,13 @@
       },
       "frames": [
         {
-          "image": "assets/gibbets-bow-master-promo-01.jpg",
-          "time_label": ""
+          "image": "assets/gibbets-bow-master-promo-01.jpg"
         },
         {
-          "image": "assets/gibbets-bow-master-promo-02.jpg",
-          "time_label": ""
+          "image": "assets/gibbets-bow-master-promo-02.jpg"
         },
         {
-          "image": "assets/gibbets-bow-master-promo-03.jpg",
-          "time_label": ""
+          "image": "assets/gibbets-bow-master-promo-03.jpg"
         }
       ],
       "stats": [
@@ -413,24 +402,19 @@
       ],
       "frames": [
         {
-          "image": "assets/unmoored.png",
-          "time_label": "2018"
+          "image": "assets/unmoored.png"
         },
         {
-          "image": "assets/defying-gravity-01.jpg",
-          "time_label": "2018"
+          "image": "assets/defying-gravity-01.jpg"
         },
         {
-          "image": "assets/defying-gravity-02.jpg",
-          "time_label": "2018"
+          "image": "assets/defying-gravity-02.jpg"
         },
         {
-          "image": "assets/renault-f1-01.jpg",
-          "time_label": "2019"
+          "image": "assets/renault-f1-01.jpg"
         },
         {
-          "image": "assets/renault-f1-02.jpg",
-          "time_label": "2019"
+          "image": "assets/renault-f1-02.jpg"
         }
       ],
       "stats": [
